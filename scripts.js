@@ -45,13 +45,17 @@ function generateTableRows() {
         tdName.textContent = row.nombre;
 
         // Create and populate <td> for the age
-        const tdAge = document.createElement('td');
-        tdAge.textContent = row.Apellido;
+        const tdApellido = document.createElement('td');
+        tdApellido.textContent = row.apellido;
+
+        const tdEmail = document.createElement('td');
+        tdEmail.textContent = row.email;
 
         // Append <th> and <td> to the row
         tr.appendChild(th);
         tr.appendChild(tdName);
-        tr.appendChild(tdAge);
+        tr.appendChild(tdApellido);
+        tr.appendChild(tdEmail);
 
         // Append the row to the <tbody>
         tableBody.appendChild(tr);
